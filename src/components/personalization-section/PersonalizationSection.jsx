@@ -4,7 +4,9 @@ export const PersonalizationSection = () => {
   return (
     <section className="personalization-container">
       <article className="personalization-left">
-        <p className="phrase-personalization">Buscamos la maxima calidad</p>
+        <aside className="aside-personalization">
+          <p className="phrase-personalization">Buscamos la maxima calidad</p>
+        </aside>
         <div className="title-p-personalization">
           <h3 className="h3-personalization">Productos personalizados</h3>
           <p className="p-personalization">

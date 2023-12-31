@@ -21,8 +21,8 @@ export const AboutSection = () => {
             Desde pulseras hasta decoración para el hogar, cada artículo refleja
             nuestra dedicación a la autenticidad y la estética sencilla.
           </p>
+          <button className="button-about-section">Mas sobre nosotros</button>
         </div>
-        <button className="button-about-section">Mas sobre nosotros</button>
       </article>
       <section className="about-section-left">
         <img className="image-work" src={triangulo} alt="workImage" />
