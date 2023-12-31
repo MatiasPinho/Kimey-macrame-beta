@@ -1,6 +1,8 @@
-export const NavMobileLogo = () => {
+export const NavMobileLogo = ({onclick}) => {
   return (
-    <svg
+    <svg onClick={
+      onclick
+    }
       className="nav-mobile-logo"
       xmlns="http://www.w3.org/2000/svg"
       width="30"
