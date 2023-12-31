@@ -1,0 +1,81 @@
+.footer-all-section-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #cbc7b5;
+  gap: 1.5rem;
+  height: 80vh;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.contact-text :nth-child(1) {
+  color: #ffffff;
+  font-family: "Ms Madi", cursive;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.contact-text :nth-child(2) {
+  color: #ab9c85;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  justify-content: center;
+  width: 90%;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #998262;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 2px;
+}
+
+input[type="submit"] {
+  background: #a65c41;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: max-content;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  width: 130px;
+  border-radius: 0px;
+}
+
+.decoration-icon {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 0;
+  left: 0;
+}
+
+.decoration-icon2 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  bottom: 0;
+  right: 0;
+}

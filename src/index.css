@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Primary: #fffcf7;
+  --Secondary: #6b4f30;
+  --Terciary: #cda691;
+  --Quartiary: #eee7de;
+  --Quinary: #887155;
+  --Senary: #e4d8c9;
+}
+
+body {
+  background-color: var(--Quartiary);
+}
+
+main {
+  padding-top: 4rem;
+}
+
+strong {
+  color: #9a8670;
+}
