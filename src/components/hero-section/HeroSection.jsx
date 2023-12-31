@@ -15,7 +15,7 @@ export const HeroSection = () => {
         </h1>
         <button className="button-hero-section">Compra ahora</button>
       </div>
-      <img src={imageHeroSection} alt="image-hero-section" />
+     
     </section>
   );
 };
