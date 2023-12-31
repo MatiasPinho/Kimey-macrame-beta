@@ -4,7 +4,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 60vw;
+  height: 85vw;
+  width: 100vw;
   background-image: url(/main_background.png);
   background-size: cover;
   background-position: center center;
