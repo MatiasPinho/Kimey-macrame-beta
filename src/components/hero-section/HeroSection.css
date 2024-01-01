@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   height: 85vw;
-  width: 100vw;
+  width: 100%;
   background-image: url(/main_background.png);
   background-size: cover;
   background-position: center center;
@@ -49,4 +49,24 @@
   border: none;
   padding: 0.8rem;
   width: 130px;
+}
+
+@media screen and (min-width: 720px)  {
+
+.hero-section-container{
+  background-image: url(/main_background_pc.png);
+  height: 100vh;
+}
+
+  .hero-left p{
+    font-size: 23px;
+  }
+  .hero-left h1{
+    font-size: 20px;
+  }
+
+  .button-hero-section{
+    font-size: 16px;
+  }
+
 }

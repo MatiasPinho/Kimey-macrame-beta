@@ -48,6 +48,7 @@
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   letter-spacing: 2px;
+  max-width: 40ch;
 }
 
 .personalization-right {
@@ -77,4 +78,46 @@
   color: white;
   border: none;
   padding: 0.8rem;
+}
+
+@media screen and (min-width:720px) {
+  .phrase-personalization{
+    font-size: 23px;
+  }
+
+.h3-personalization{
+  font-size: 26px;
+}
+
+.p-personalization{
+  font-size: 20px;
+}
+
+.button-personalization{
+  font-size: 16px;
+}
+
+
+}
+
+@media screen and (min-width:1000px) {
+  .personalization-container{
+    flex-direction: row;
+    height: 100vh;
+  
+  }
+
+  .personalization-left{
+    width: 50%;
+    height: 100%;
+    justify-content:center;
+    gap: 1.5rem;
+  
+  }
+
+.personalization-right{
+  width: 50%;
+  height: 100%;
+}
+
 }

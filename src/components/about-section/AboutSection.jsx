@@ -22,11 +22,25 @@ export const AboutSection = () => {
             nuestra dedicación a la autenticidad y la estética sencilla.
           </p>
           <button className="button-about-section">Mas sobre nosotros</button>
+          
         </div>
+        <div className="images-about-destokp">
+          <img
+            className="image-about"
+            src={image_about_3}
+            alt="image_about_3"
+          />
+          <img
+            className="image-about"
+            src={image_about_4}
+            alt="image_about_4"
+          />
+          </div>
       </article>
       <section className="about-section-left">
-        <img className="image-work" src={triangulo} alt="workImage" />
+        <img className="image-work-mobile" src={triangulo} alt="workImage" />
         <article className="image-container-about">
+          
           <img
             className="image-about"
             src={image_about_1}

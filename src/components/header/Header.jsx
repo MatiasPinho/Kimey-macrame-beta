@@ -6,7 +6,7 @@ export const Header = () => {
   const  [isNavActive,setIsNavActive] = useState(false)
   const toggleNav = () =>{
     setIsNavActive(!isNavActive)
-    console.log("se clickeo");
+   
   }
   return (
     <header>
@@ -23,6 +23,15 @@ export const Header = () => {
 
         </ul>
         
+      </nav>
+      <nav className="nav-destokp-container">
+      <img src={kimeyLogo} alt="logo" className="kimey-logo" />
+      <ul>
+        <li>INICIO</li>
+        <li>PRODUCTOS</li>
+        <li>NOSOTROS</li>
+        <li>CONTACTANOS</li>
+      </ul>
       </nav>
     </header>
   );

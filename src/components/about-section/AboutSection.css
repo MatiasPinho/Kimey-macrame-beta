@@ -23,7 +23,7 @@
 .paragraph-about-section {
   color: var(--Quinary);
   font-family: "Josefin Sans", sans-serif;
-
+  max-width: 40ch;
   letter-spacing: 2px;
 }
 
@@ -47,7 +47,12 @@
   max-width: 80%;
 }
 
-.image-work {
+.image-work-mobile {
+  margin-top: 2rem;
+  height: 200px;
+  width: 200px;
+}
+.image-work-destokp {
   margin-top: 2rem;
   height: 200px;
   width: 200px;
@@ -81,3 +86,129 @@
   flex-basis: 0.5;
   border-radius: 4px;
 }
+
+.image-work-destokp{
+  display: none;
+}
+
+.images-about-destokp{
+  display: none;
+}
+
+@media screen and (min-width:720px) and (max-width:1200px) {
+  
+  .test h2{
+    font-size: 23px;
+  }
+
+  .test p{
+    font-size: 20px;
+  }
+
+  .button-about-section{
+    font-size: 15px;
+  }
+
+  .about-section-right{
+    height: 25rem;
+  }
+
+ 
+
+}
+
+
+
+@media screen and (min-width:1000px) {
+  .about-section-container{
+    display: flex;
+  
+    flex-direction: row-reverse;
+    background: linear-gradient(to right, #a65c41 50%, #e4d8c9 50%);
+
+  }
+
+  .test h2{
+    font-size: 20px;
+  }
+
+  .test p{
+    font-size: 16px;
+  }
+
+
+
+  .about-section-left{
+
+    width: 50%;
+    justify-content: space-between;
+  
+    background-color: transparent;
+  }
+
+  .about-section-right{
+  height: 100%;
+  width: 50%;
+    background-color: transparent;
+    justify-content: flex-start;
+
+  }
+
+  .image-container-about{
+    display: flex;
+    gap: 3.5rem;
+    align-items: flex-end;
+    padding-bottom: 3rem;
+  }
+
+  .image-container-about :nth-child(1){
+    height: 171px;
+  }
+
+  .image-container-about :nth-child(2){
+    height: 220px;
+  }
+
+
+/* 
+    .image-container-about :nth-child(1){
+      display: none;
+      }
+      .image-container-about :nth-child(2){
+        display: none;
+        } */
+        .image-container-about :nth-child(3){
+          display: none;
+          }
+          .image-container-about :nth-child(4){
+            display: none;
+          }
+       
+          .test{
+            align-items:flex-start;
+            margin-top: 3rem;
+          }
+
+
+          .images-about-destokp{
+            display: flex;
+            gap: 3.5rem;
+            align-items: flex-end;
+            margin-bottom: 3rem;
+          }
+          
+          .images-about-destokp :nth-child(1){
+            height: 251px;
+          }
+          .images-about-destokp :nth-child(2){
+            height: 350px;
+          }
+          
+
+          .image-work-mobile{
+            margin-top: 3rem;
+            height: 300px;
+            width: 301px;
+          }
+
+    }
