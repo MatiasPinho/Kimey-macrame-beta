@@ -7,8 +7,8 @@ import { Footer } from "./components/Footer/Footer";
 function App() {
   return (
     <>
+      <Header></Header>
       <main>
-        <Header></Header>
         <HeroSection></HeroSection>
         <AboutSection></AboutSection>
         <PersonalizationSection></PersonalizationSection>
