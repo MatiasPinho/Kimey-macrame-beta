@@ -1,8 +1,9 @@
 import "./HeroSection.css";
-import imageHeroSection from "/image_hero_section.png";
+
 export const HeroSection = () => {
   return (
     <section className="hero-section-container">
+      <div className="opacity"></div>
       <div className="hero-left">
         <aside className="p-hero-container">
           <p className="p-hero-section">Elegancia,</p>
@@ -15,7 +16,6 @@ export const HeroSection = () => {
         </h1>
         <button className="button-hero-section">Compra ahora</button>
       </div>
-     
     </section>
   );
 };

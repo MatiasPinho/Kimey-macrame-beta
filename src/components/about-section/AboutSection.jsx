@@ -9,58 +9,30 @@ import triangulo from "/Frame 8.png";
 export const AboutSection = () => {
   return (
     <section className="about-section-container">
-      <article className="about-section-right">
-        <div className="test">
-          <h2 className="h2-about-section">Somos Kimey Macramé</h2>
-          <p className="paragraph-about-section">
-            Nuestro equipo, formado por <strong>apasionados</strong> artesanos,
-            trabaja meticulosamente para asegurar la calidad en cada pieza que
-            creamos.
-          </p>
-          <p className="paragraph-about-section">
+      <section className="about-section-right">
+        <article className="image-text-about">
+          <img src={image_about_3} alt="" />
+          <p className="p-text-image-about">Telares</p>
+        </article>
+        <div className="p-h4-button-about">
+          <h4>Somos Kimey Macrame</h4>
+          <p>
+            Nuestro equipo, formado por apasionados artesanos, trabaja
+            meticulosamente para asegurar la calidad en cada pieza que creamos.
             Desde pulseras hasta decoración para el hogar, cada artículo refleja
             nuestra dedicación a la autenticidad y la estética sencilla.
           </p>
-          <button className="button-about-section">Mas sobre nosotros</button>
-          
+          <button>Mas sobre nosotros</button>
         </div>
-        <div className="images-about-destokp">
-          <img
-            className="image-about"
-            src={image_about_3}
-            alt="image_about_3"
-          />
-          <img
-            className="image-about"
-            src={image_about_4}
-            alt="image_about_4"
-          />
-          </div>
-      </article>
+      </section>
       <section className="about-section-left">
-        <img className="image-work-mobile" src={triangulo} alt="workImage" />
-        <article className="image-container-about">
-          
-          <img
-            className="image-about"
-            src={image_about_1}
-            alt="image_about_1"
-          />
-          <img
-            className="image-about"
-            src={image_about_2}
-            alt="image_about_2"
-          />
-          <img
-            className="image-about"
-            src={image_about_3}
-            alt="image_about_3"
-          />
-          <img
-            className="image-about"
-            src={image_about_4}
-            alt="image_about_4"
-          />
+        <article className="image-text-about">
+          <img src={image_about_1} alt="" />
+          <p className="p-text-image-about">Colgantes</p>
+        </article>
+        <article className="image-text-about">
+          <img src={image_about_2} alt="" />
+          <p className="p-text-image-about">Pulseras</p>
         </article>
       </section>
     </section>
