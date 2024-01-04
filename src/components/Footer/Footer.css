@@ -65,6 +65,13 @@ input[type="submit"] {
   width: 130px;
 }
 
+input[type="submit"]:hover {
+  background-color: #e4d8c9;
+  color: #a65c41;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
 .decoration-icon {
   position: absolute;
   width: 80px;
