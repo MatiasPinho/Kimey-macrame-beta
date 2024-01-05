@@ -1,19 +1,25 @@
 import "./App.css";
-import { AboutSection } from "./components/about-section/AboutSection";
 import { Header } from "./components/header/Header";
-import { HeroSection } from "./components/hero-section/HeroSection";
-import { PersonalizationSection } from "./components/personalization-section/PersonalizationSection";
-import { Footer } from "./components/Footer/Footer";
+
+import {
+  BrowserRouter,
+  createBrowserRouter,
+  RouterProvider,
+  Routes,
+  Route,
+} from "react-router-dom";
+import { MainHtml } from "./components/pages/main-html/MainHtml";
+import { AboutPage } from "./components/pages/about-page/AboutPage";
 function App() {
   return (
     <>
-      <Header></Header>
-      <main>
-        <HeroSection></HeroSection>
-        <AboutSection></AboutSection>
-        <PersonalizationSection></PersonalizationSection>
-        <Footer></Footer>
-      </main>
+      <BrowserRouter>
+        <Header></Header>
+        <Routes>
+          <Route path="/" element={<MainHtml />} />
+          <Route path="about" element={<AboutPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

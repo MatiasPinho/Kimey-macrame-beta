@@ -2,8 +2,11 @@ import "./Header.css";
 import kimeyLogo from "/logo2.png";
 import { NavMobileLogo } from "../icons/NavMobileLogo";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { MainHtml } from "../pages/main-html/MainHtml";
 export const Header = () => {
   const [isNavActive, setIsNavActive] = useState(false);
+  console.log(isNavActive);
   const toggleNav = () => {
     setIsNavActive(!isNavActive);
   };
@@ -20,19 +23,30 @@ export const Header = () => {
             isNavActive ? "nav-mobile-deploy" : "nav-mobile-deploy-hidden"
           }`}
         >
-          <li>Inicio</li>
+          <li onClick={toggleNav}>
+            <Link to="/">Inicio</Link>
+          </li>
           <li>Productos</li>
-          <li>Nosotros</li>
-
+          <li onClick={toggleNav}>
+            <Link to="about">Nosotros</Link>
+          </li>
           <li>Contactanos</li>
         </ul>
       </nav>
       <nav className="nav-destokp-container">
         <ul>
-          <li>Inicio</li>
-          <li>Productos</li>
-          <li>Nosotros</li>
-          <li>Contactanos</li>
+          <li>
+            <Link to={"/"}>Inicio</Link>
+          </li>
+          <li>
+            <Link to={"#"}>Productos</Link>
+          </li>
+          <li>
+            <Link to={"/about"}>Nosotros</Link>
+          </li>
+          <li>
+            <Link to={"#"}>Contactanos</Link>
+          </li>
         </ul>
       </nav>
     </header>
