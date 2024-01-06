@@ -9,9 +9,9 @@ export const AboutPage = () => {
           <hr className="line-separator" />
           <Link to={"/About"}>Nosotros</Link>
         </span>
+
         <div className="container-text-about-page">
           <h2>Queres conocernos mas?</h2>
-
           <p>
             ¡Saludos desde el taller de "Kimey Macrame"! Aquí, cada hilo cuenta
             una historia y cada nudo es una expresión de creatividad. Sumérgete

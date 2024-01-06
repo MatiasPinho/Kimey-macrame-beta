@@ -25,16 +25,17 @@
 
 .container-text-about-page {
   display: flex;
+  padding-top: 2rem;
   flex-direction: column;
   gap: 1.5rem;
   justify-content: center;
   max-width: 90%;
   margin: 0 auto;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .container-text-about-page h2 {
-  margin-left: -19px;
+  margin-left: -4%;
 }
 
 .container-text-about-page p {
@@ -61,4 +62,10 @@
   width: 22px;
   height: 1px;
   background-color: #887155;
+}
+
+.container-about-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
