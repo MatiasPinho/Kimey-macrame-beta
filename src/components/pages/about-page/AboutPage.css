@@ -25,13 +25,19 @@
 
 .container-text-about-page {
   display: flex;
-  padding-top: 2rem;
+  padding-top: 4rem;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 4rem;
   justify-content: center;
   max-width: 90%;
   margin: 0 auto;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
+}
+
+.container-text-about-page article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .container-text-about-page h2 {
@@ -66,6 +72,43 @@
 
 .container-about-page {
   display: flex;
+
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.container-contact-about-page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1.5rem;
+}
+
+.svg-about-page {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: -73px;
+  bottom: -13px;
+}
+
+.container-contact-about-page ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+  color: #a65c41;
+}
+
+@media screen and (max-width: 720px) {
+  .container-contact-about-page {
+    position: static;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .svg-about-page {
+    position: relative;
+    left: -45px;
+    bottom: 6px;
+  }
 }
