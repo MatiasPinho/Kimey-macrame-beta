@@ -111,4 +111,8 @@
     left: -45px;
     bottom: 6px;
   }
+
+  .p-h4-button-about {
+    align-items: center;
+  }
 }
