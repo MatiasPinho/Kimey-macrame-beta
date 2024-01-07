@@ -141,3 +141,21 @@
   transition: 0.5s ease all;
   cursor: pointer;
 }
+
+@media screen and (max-width: 720px) {
+  .paragraph-search-filter-container {
+    flex-direction: column;
+
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .buttons-filter {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .buttons-page-container {
+    flex-wrap: wrap;
+  }
+}
