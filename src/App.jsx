@@ -18,8 +18,8 @@ function App() {
         <Header></Header>
         <Routes>
           <Route path="/" element={<MainHtml />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="products" element={<ProductPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/products" element={<ProductPage />} />
         </Routes>
       </BrowserRouter>
     </>
