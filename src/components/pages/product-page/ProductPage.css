@@ -156,5 +156,7 @@
 
   .buttons-page-container {
     flex-wrap: wrap;
+    max-width: 95%;
+    margin: 0 auto;
   }
 }
