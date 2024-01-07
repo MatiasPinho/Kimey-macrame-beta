@@ -27,10 +27,10 @@ export const Header = () => {
             <Link to="/">Inicio</Link>
           </li>
           <li onClick={toggleNav}>
-            <Link to="products">Productos</Link>
+            <Link to="/products">Productos</Link>
           </li>
           <li onClick={toggleNav}>
-            <Link to="about">Nosotros</Link>
+            <Link to="/about">Nosotros</Link>
           </li>
           <li>Contactanos</li>
         </ul>
