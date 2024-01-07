@@ -1,56 +1,74 @@
 [
   {
-    "id": 1,
-    "titulo": "Tapiz de Pared",
+    "id": 7,
+    "titulo": "Tapiz de Pared Geométrico",
     "categoria": "Decoración",
-    "descripcion": "Hermoso tapiz de pared hecho a mano con técnicas de macramé.",
+    "descripcion": "Tapiz de pared con diseño geométrico, tejido con elegancia y precisión.",
     "dimensiones": "Grande",
-    "color": "Blanco",
-    "imagen": "/image_about_1.png"
+    "color": "Negro y Blanco",
+    "imagen": "/image_about_3.png"
   },
   {
-    "id": 2,
-    "titulo": "Macetero Colgante",
-    "categoria": "Jardinería",
-    "descripcion": "Macetero colgante perfecto para plantas pequeñas o suculentas.",
-    "dimensiones": "Mediano",
-    "color": "Verde",
-    "imagen": "/image_about_1.png"
-  },
-  {
-    "id": 3,
-    "titulo": "Llavero de Macramé",
-    "categoria": "Accesorios",
-    "descripcion": "Llavero único tejido con detalles en nudos de macramé.",
-    "dimensiones": "Pequeño",
-    "color": "Marrón",
-    "imagen": "/image_about_1.png"
-  },
-  {
-    "id": 1,
-    "titulo": "Tapiz de Pared",
+    "id": 8,
+    "titulo": "Mandala Macramé",
     "categoria": "Decoración",
-    "descripcion": "Hermoso tapiz de pared hecho a mano con técnicas de macramé.",
-    "dimensiones": "Grande",
-    "color": "Blanco",
-    "imagen": "/image_about_1.png"
-  },
-  {
-    "id": 2,
-    "titulo": "Macetero Colgante",
-    "categoria": "Jardinería",
-    "descripcion": "Macetero colgante perfecto para plantas pequeñas o suculentas.",
+    "descripcion": "Mandala de macramé para decorar tus espacios con espiritualidad y arte.",
     "dimensiones": "Mediano",
-    "color": "Verde",
-    "imagen": "/image_about_1.png"
+    "color": "Amarillo y Violeta",
+    "imagen": "/image_about_3.png"
   },
   {
-    "id": 3,
-    "titulo": "Llavero de Macramé",
+    "id": 9,
+    "titulo": "Collar de Macramé",
     "categoria": "Accesorios",
-    "descripcion": "Llavero único tejido con detalles en nudos de macramé.",
+    "descripcion": "Collar bohemio tejido con hilos de colores y estilo único de macramé.",
     "dimensiones": "Pequeño",
-    "color": "Marrón",
-    "imagen": "/image_about_1.png"
+    "color": "Turquesa",
+    "imagen": "/image_about_3.png"
+  },
+  {
+    "id": 10,
+    "titulo": "Cortina de Puerta",
+    "categoria": "Decoración",
+    "descripcion": "Cortina de puerta hecha con nudos de macramé para un ambiente acogedor.",
+    "dimensiones": "Grande",
+    "color": "Gris",
+    "imagen": "/image_about_4.png"
+  },
+  {
+    "id": 11,
+    "titulo": "Soporte para Macetas",
+    "categoria": "Jardinería",
+    "descripcion": "Soporte elegante para colgar macetas y dar vida a tus plantas.",
+    "dimensiones": "Mediano",
+    "color": "Blanco Roto",
+    "imagen": "/image_about_4.png"
+  },
+  {
+    "id": 12,
+    "titulo": "Anillo de Macramé",
+    "categoria": "Accesorios",
+    "descripcion": "Anillo tejido con nudos intricados, un accesorio único y artesanal.",
+    "dimensiones": "Pequeño",
+    "color": "Dorado",
+    "imagen": "/image_about_4.png"
+  },
+  {
+    "id": 13,
+    "titulo": "Tapete de Macramé",
+    "categoria": "Decoración",
+    "descripcion": "Tapete redondo tejido con paciencia y dedicación, ideal para cualquier espacio.",
+    "dimensiones": "Grande",
+    "color": "Marrón Claro",
+    "imagen": "/image_about_4.png"
+  },
+  {
+    "id": 14,
+    "titulo": "Candelabro de Macramé",
+    "categoria": "Decoración",
+    "descripcion": "Candelabro artesanal para iluminar tu hogar con un toque bohemio.",
+    "dimensiones": "Mediano",
+    "color": "Negro",
+    "imagen": "/image_about_3.png"
   }
 ]
