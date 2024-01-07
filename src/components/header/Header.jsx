@@ -26,7 +26,9 @@ export const Header = () => {
           <li onClick={toggleNav}>
             <Link to="/">Inicio</Link>
           </li>
-          <li>Productos</li>
+          <li onClick={toggleNav}>
+            <Link to="products">Productos</Link>
+          </li>
           <li onClick={toggleNav}>
             <Link to="about">Nosotros</Link>
           </li>
