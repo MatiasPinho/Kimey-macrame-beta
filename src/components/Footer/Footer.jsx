@@ -9,7 +9,7 @@ export const Footer = () => {
         <h3>Contacta por email con nosotros</h3>
         <p>Obtiene un descuento de 5% contactando por este medio</p>
       </article>
-      <form>
+      <form className="form-contact">
         <input
           type="text"
           aria-label="name"

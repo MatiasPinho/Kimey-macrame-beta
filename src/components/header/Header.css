@@ -69,6 +69,8 @@ Header {
   display: block;
   width: 100%;
   height: 100%;
+  text-decoration: none;
+  color: var(--Quinary);
 }
 
 .nav-mobile-deploy li:hover {
@@ -110,23 +112,23 @@ Header {
     cursor: pointer;
   }
 
-  .nav-destokp-container li:hover {
-    color: #9a8670;
-    transition: all 0.5s ease;
+  .nav-mobile-deploy a {
+    text-decoration: none;
+    color: var(--Quinary);
   }
-}
 
-.nav-mobile-deploy a {
-  text-decoration: none;
-  color: var(--Quinary);
-}
+  .nav-destokp-container a {
+    text-decoration: none;
+    color: #e4d8c9;
+  }
 
-.nav-destokp-container a {
-  text-decoration: none;
-  color: #e4d8c9;
-}
+  .nav-destokp-container a:hover {
+    color: #a65c41;
+    transition: 0.5s ease all;
+  }
 
-.nav-mobile-deploy-hidden a {
-  text-decoration: none;
-  color: var(--Quinary);
+  .nav-mobile-deploy-hidden a {
+    text-decoration: none;
+    color: var(--Quinary);
+  }
 }

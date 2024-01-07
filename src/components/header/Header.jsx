@@ -34,12 +34,12 @@ export const Header = () => {
         </ul>
       </nav>
       <nav className="nav-destokp-container">
-        <ul>
+        <ul className="ul-destokp">
           <li>
             <Link to={"/"}>Inicio</Link>
           </li>
           <li>
-            <Link to={"#"}>Productos</Link>
+            <Link to={"products"}>Productos</Link>
           </li>
           <li>
             <Link to={"/about"}>Nosotros</Link>

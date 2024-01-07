@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "titulo": "Tapiz de Pared",
+    "categoria": "Decoración",
+    "descripcion": "Hermoso tapiz de pared hecho a mano con técnicas de macramé.",
+    "dimensiones": "Grande",
+    "color": "Blanco",
+    "imagen": "/image_about_1.png"
+  },
+  {
+    "id": 2,
+    "titulo": "Macetero Colgante",
+    "categoria": "Jardinería",
+    "descripcion": "Macetero colgante perfecto para plantas pequeñas o suculentas.",
+    "dimensiones": "Mediano",
+    "color": "Verde",
+    "imagen": "/image_about_1.png"
+  },
+  {
+    "id": 3,
+    "titulo": "Llavero de Macramé",
+    "categoria": "Accesorios",
+    "descripcion": "Llavero único tejido con detalles en nudos de macramé.",
+    "dimensiones": "Pequeño",
+    "color": "Marrón",
+    "imagen": "/image_about_1.png"
+  },
+  {
+    "id": 1,
+    "titulo": "Tapiz de Pared",
+    "categoria": "Decoración",
+    "descripcion": "Hermoso tapiz de pared hecho a mano con técnicas de macramé.",
+    "dimensiones": "Grande",
+    "color": "Blanco",
+    "imagen": "/image_about_1.png"
+  },
+  {
+    "id": 2,
+    "titulo": "Macetero Colgante",
+    "categoria": "Jardinería",
+    "descripcion": "Macetero colgante perfecto para plantas pequeñas o suculentas.",
+    "dimensiones": "Mediano",
+    "color": "Verde",
+    "imagen": "/image_about_1.png"
+  },
+  {
+    "id": 3,
+    "titulo": "Llavero de Macramé",
+    "categoria": "Accesorios",
+    "descripcion": "Llavero único tejido con detalles en nudos de macramé.",
+    "dimensiones": "Pequeño",
+    "color": "Marrón",
+    "imagen": "/image_about_1.png"
+  }
+]
