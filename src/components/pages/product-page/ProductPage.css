@@ -139,6 +139,10 @@
   background-color: #a65c41;
 }
 
+.button-filter-category-deployer {
+  position: relative;
+}
+
 .buttons-page-container button {
   width: 50px;
   height: 50px;
@@ -296,5 +300,12 @@
     flex-wrap: wrap;
     max-width: 95%;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 451px) {
+  .filter-category-ul {
+    left: auto;
+    z-index: 10;
   }
 }

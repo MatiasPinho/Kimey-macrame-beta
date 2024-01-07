@@ -39,13 +39,15 @@ export const ProductPage = () => {
             </form>
           </aside>
           <aside className="buttons-filter">
-            <button
-              onClick={() => {
-                setIsButtonFilterClicked(!isButtonFilterClicked);
-              }}
-            >
-              Filtrar
-            </button>
+            <div>
+              <button
+                onClick={() => {
+                  setIsButtonFilterClicked(!isButtonFilterClicked);
+                }}
+              >
+                Filtrar
+              </button>
+            </div>
             <button>Ordenar por</button>
             <div
               className={`filter-category-ul ${
