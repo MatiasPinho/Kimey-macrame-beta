@@ -441,7 +441,7 @@ export const ProductPage = () => {
 
             <ul
               className={`filter-order-ul ${
-                isButtonFilterClicked.order ? "filter-order-ul-hidden" : ""
+                !isButtonFilterClicked.order ? "filter-order-ul-hidden" : ""
               }`}
             >
               <li
