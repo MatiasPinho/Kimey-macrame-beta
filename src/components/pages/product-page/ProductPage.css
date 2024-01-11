@@ -170,7 +170,7 @@
   background-color: #eee7de;
   width: 200px;
   border-radius: 0px 0px 8px 8px;
-  transition: height 0.5s, transform 0.5s;
+  transition: height 0.4s, transform 0.4s;
   transform-origin: top;
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
@@ -223,23 +223,26 @@
 
 .checkbox-container-category {
   display: flex;
-  flex-wrap: wrap;
   gap: 1.5rem;
   padding: 1rem 0rem 1rem 0;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   margin-top: 0.5rem;
   max-height: 1000px;
   transform-origin: top;
   transform: scaleY(1);
-  transition: height 0.25s, transform 0.25s;
-  transition: 0.55s ease all;
+  transition: height 0.4s, transform 0.4s;
+  transition: 0.4s ease all;
+  letter-spacing: 2px;
+  flex-direction: column;
 
   letter-spacing: 2px;
 }
 
 .checkbox-container-category li {
   cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .p-name-category {
@@ -273,24 +276,56 @@
   padding: 2rem 1rem 2rem 1rem;
   border-bottom: 2px solid grey;
   position: relative;
+  flex-direction: column;
 }
 .color-section {
   display: flex;
   padding: 2rem 1rem 2rem 1rem;
   border-bottom: 2px solid grey;
   position: relative;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
-.filter-category-ul ul {
+.filter-order-ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 43px;
+  left: 240px;
+  width: 200px;
+  list-style: none;
+  background-color: #eee7de;
+  border: 2px solid #a65c41;
+  align-items: center;
+  border-radius: 0px 0px 8px 8px;
+  transform: scaleY(1);
+  transition: height 0.4s, transform 0.4s;
+  transform-origin: top;
+  z-index: 1;
+}
+
+.filter-order-ul-hidden {
+  transform: scaleY(0);
+}
+
+.filter-order-ul li {
   list-style-type: none;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  color: #887155;
+  padding: 2rem 1rem 2rem 1rem;
+  width: 100%;
+  max-width: 30ch;
+  border-bottom: 2px solid grey;
 }
 
 @media screen and (max-width: 720px) {
   .paragraph-search-filter-container {
     flex-direction: column;
-
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   .buttons-filter {
@@ -313,5 +348,10 @@
   .filter-category-ul {
     left: auto;
     z-index: 10;
+  }
+
+  .filter-order-ul {
+    top: 126px;
+    left: auto;
   }
 }

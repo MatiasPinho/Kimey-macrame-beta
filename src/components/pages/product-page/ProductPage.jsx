@@ -4,9 +4,18 @@ import data from "../../../../data/Data.json";
 import { useState } from "react";
 
 export const ProductPage = () => {
-  const [isButtonFilterClicked, setIsButtonFilterClicked] = useState(false);
+  const [isButtonFilterClicked, setIsButtonFilterClicked] = useState({
+    filter: false,
+    order: false,
+  });
+
   const [isButtonFilterCategoryClicked, setIsButtonFilterCategoryClicked] =
-    useState(false);
+    useState({
+      category: false,
+      color: false,
+      dimensions: false,
+    });
+
   const [isCheckboxClicked, setIsCheckboxClicked] = useState({
     telares: false,
     pulseras: false,
@@ -14,10 +23,32 @@ export const ProductPage = () => {
     categoria4: false,
     categoria5: false,
     categoria6: false,
+    blanco: false,
+    marron: false,
+    gris: false,
+    negro: false,
+    azul: false,
   });
 
-  console.log(isCheckboxClicked);
+  const [isButtonFilterDimensionClicked, setIsButtonFilterDimensionClicked] =
+    useState({
+      dimension: false,
+    });
 
+  const [isCheckboxDimensionClicked, setIsCheckboxDimensionClicked] = useState({
+    dimension1: false,
+    dimension2: false,
+    dimension3: false,
+    // Agrega más dimensiones según sea necesario
+  });
+
+  const [isClickOrder, setIsClickOrder] = useState({
+    maxPrice: false,
+    minPrice: false,
+    zA: false,
+    aZ: false,
+  });
+  console.log(isClickOrder);
   return (
     <main className="main-product-page-container">
       <section className="section-page-container">
@@ -42,31 +73,44 @@ export const ProductPage = () => {
             <div>
               <button
                 onClick={() => {
-                  setIsButtonFilterClicked(!isButtonFilterClicked);
+                  setIsButtonFilterClicked((prevStates) => ({
+                    ...prevStates,
+                    filter: !prevStates.filter,
+                  }));
                 }}
               >
                 Filtrar
               </button>
             </div>
-            <button>Ordenar por</button>
+            <button
+              onClick={() => {
+                setIsButtonFilterClicked((prevStates) => ({
+                  ...prevStates,
+                  order: !prevStates.order,
+                }));
+              }}
+            >
+              Ordenar por
+            </button>
             <div
               className={`filter-category-ul ${
-                !isButtonFilterClicked ? "filter-category-ul-hidden" : ""
+                !isButtonFilterClicked.filter ? "filter-category-ul-hidden" : ""
               }`}
             >
               <div className="category-section">
                 <div
-                  onClick={() =>
-                    setIsButtonFilterCategoryClicked(
-                      !isButtonFilterCategoryClicked
-                    )
-                  }
+                  onClick={() => {
+                    setIsButtonFilterCategoryClicked((prevStates) => ({
+                      ...prevStates,
+                      category: !prevStates.category,
+                    }));
+                  }}
                   className="p-and-svg-category"
                 >
                   <p className="p-name-category">Categoria</p>
                   <svg
                     className={`svg-arrow-category ${
-                      isButtonFilterCategoryClicked
+                      isButtonFilterCategoryClicked.category
                         ? "svg-arrow-category-rotate"
                         : ""
                     }`}
@@ -80,7 +124,7 @@ export const ProductPage = () => {
                 </div>
                 <ul
                   className={`checkbox-container-category ${
-                    !isButtonFilterCategoryClicked
+                    !isButtonFilterCategoryClicked.category
                       ? "checkbox-container-category-hidden"
                       : ""
                   }`}
@@ -190,12 +234,257 @@ export const ProductPage = () => {
                 </ul>
               </div>
               <div className="color-section">
-                <p>Color</p>
+                <div
+                  onClick={() =>
+                    setIsButtonFilterCategoryClicked((prevStates) => ({
+                      ...prevStates,
+                      color: !prevStates.color,
+                    }))
+                  }
+                  className="p-and-svg-category"
+                >
+                  <p>Color</p>
+                  <svg
+                    className={`svg-arrow-category ${
+                      isButtonFilterCategoryClicked.color
+                        ? "svg-arrow-category-rotate"
+                        : ""
+                    }`}
+                    xmlns="http://www.w3.org/2000/svg"
+                    id="Layer_1"
+                    data-name="Layer 1"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="m17.635,14.428l-5.281-5.281c-.189-.189-.518-.189-.707,0l-5.281,5.281-.707-.707,5.281-5.281c.566-.566,1.555-.566,2.121,0l5.281,5.281-.707.707Z" />
+                  </svg>
+                </div>
+                <ul
+                  className={`checkbox-container-category ${
+                    !isButtonFilterCategoryClicked.color
+                      ? "checkbox-container-category-hidden"
+                      : ""
+                  }`}
+                >
+                  <li
+                    onClick={() => {
+                      setIsCheckboxClicked((prevStates) => ({
+                        ...prevStates,
+                        blanco: !prevStates.blanco,
+                      }));
+                    }}
+                  >
+                    <div
+                      className={`checkbox-category ${
+                        isCheckboxClicked.blanco
+                          ? "checkbox-category-clicked"
+                          : ""
+                      }`}
+                    ></div>
+                    <p>Blanco</p>
+                  </li>
+                  <li
+                    onClick={() => {
+                      setIsCheckboxClicked((prevStates) => ({
+                        ...prevStates,
+                        marron: !prevStates.marron,
+                      }));
+                    }}
+                  >
+                    <div
+                      className={`checkbox-category ${
+                        isCheckboxClicked.marron
+                          ? "checkbox-category-clicked"
+                          : ""
+                      }`}
+                    ></div>
+                    <p>Marrón</p>
+                  </li>
+                  <li
+                    onClick={() => {
+                      setIsCheckboxClicked((prevStates) => ({
+                        ...prevStates,
+                        gris: !prevStates.gris,
+                      }));
+                    }}
+                  >
+                    <div
+                      className={`checkbox-category ${
+                        isCheckboxClicked.gris
+                          ? "checkbox-category-clicked"
+                          : ""
+                      }`}
+                    ></div>
+                    <p>Gris</p>
+                  </li>
+                  <li
+                    onClick={() => {
+                      setIsCheckboxClicked((prevStates) => ({
+                        ...prevStates,
+                        negro: !prevStates.negro,
+                      }));
+                    }}
+                  >
+                    <div
+                      className={`checkbox-category ${
+                        isCheckboxClicked.negro
+                          ? "checkbox-category-clicked"
+                          : ""
+                      }`}
+                    ></div>
+                    <p>Negro</p>
+                  </li>
+                  <li
+                    onClick={() => {
+                      setIsCheckboxClicked((prevStates) => ({
+                        ...prevStates,
+                        azul: !prevStates.azul,
+                      }));
+                    }}
+                  >
+                    <div
+                      className={`checkbox-category ${
+                        isCheckboxClicked.azul
+                          ? "checkbox-category-clicked"
+                          : ""
+                      }`}
+                    ></div>
+                    <p>Azul</p>
+                  </li>
+                </ul>
               </div>
               <div className="dimensions-section">
-                <p>Dimensiones</p>
+                <div
+                  onClick={() => {
+                    setIsButtonFilterDimensionClicked((prevStates) => ({
+                      ...prevStates,
+                      dimension: !prevStates.dimension,
+                    }));
+                  }}
+                  className="p-and-svg-category"
+                >
+                  <p>Dimensiones</p>
+                  <svg
+                    className={`svg-arrow-category ${
+                      isButtonFilterDimensionClicked.dimension
+                        ? "svg-arrow-category-rotate"
+                        : ""
+                    }`}
+                    xmlns="http://www.w3.org/2000/svg"
+                    id="Layer_1"
+                    data-name="Layer 1"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="m17.635,14.428l-5.281-5.281c-.189-.189-.518-.189-.707,0l-5.281,5.281-.707-.707,5.281-5.281c.566-.566,1.555-.566,2.121,0l5.281,5.281-.707.707Z" />
+                  </svg>
+                </div>
+                <ul
+                  className={`checkbox-container-category ${
+                    !isButtonFilterDimensionClicked.dimension
+                      ? "checkbox-container-category-hidden"
+                      : ""
+                  }`}
+                >
+                  <li
+                    onClick={() => {
+                      setIsCheckboxDimensionClicked((prevStates) => ({
+                        ...prevStates,
+                        dimension1: !prevStates.dimension1,
+                      }));
+                    }}
+                  >
+                    <div
+                      className={`checkbox-category ${
+                        isCheckboxDimensionClicked.dimension1
+                          ? "checkbox-category-clicked"
+                          : ""
+                      }`}
+                    ></div>
+                    <p>Dimension 1</p>
+                  </li>
+                  <li
+                    onClick={() => {
+                      setIsCheckboxDimensionClicked((prevStates) => ({
+                        ...prevStates,
+                        dimension2: !prevStates.dimension2,
+                      }));
+                    }}
+                  >
+                    <div
+                      className={`checkbox-category ${
+                        isCheckboxDimensionClicked.dimension2
+                          ? "checkbox-category-clicked"
+                          : ""
+                      }`}
+                    ></div>
+                    <p>Dimension 2</p>
+                  </li>
+                  <li
+                    onClick={() => {
+                      setIsCheckboxDimensionClicked((prevStates) => ({
+                        ...prevStates,
+                        dimension3: !prevStates.dimension3,
+                      }));
+                    }}
+                  >
+                    <div
+                      className={`checkbox-category ${
+                        isCheckboxDimensionClicked.dimension3
+                          ? "checkbox-category-clicked"
+                          : ""
+                      }`}
+                    ></div>
+                    <p>Dimension 3</p>
+                  </li>
+                </ul>
               </div>
             </div>
+
+            <ul
+              className={`filter-order-ul ${
+                isButtonFilterClicked.order ? "filter-order-ul-hidden" : ""
+              }`}
+            >
+              <li
+                onClick={() => {
+                  setIsClickOrder((prevStates) => ({
+                    ...prevStates,
+                    maxPrice: !prevStates.maxPrice,
+                  }));
+                }}
+              >
+                Ordenar por mayor precio
+              </li>
+              <li
+                onClick={() => {
+                  setIsClickOrder((prevStates) => ({
+                    ...prevStates,
+                    minPrice: !prevStates.minPrice,
+                  }));
+                }}
+              >
+                Ordenar por menor precio
+              </li>
+              <li
+                onClick={() => {
+                  setIsClickOrder((prevStates) => ({
+                    ...prevStates,
+                    aZ: !prevStates.aZ,
+                  }));
+                }}
+              >
+                Ordenar por orden alfabetico a-z
+              </li>
+              <li
+                onClick={() => {
+                  setIsClickOrder((prevStates) => ({
+                    ...prevStates,
+                    zA: !prevStates.zA,
+                  }));
+                }}
+              >
+                Ordenar por orden alfabetico z-a
+              </li>
+            </ul>
           </aside>
         </article>
         <article className="product-page-container">
