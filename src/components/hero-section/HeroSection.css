@@ -17,6 +17,7 @@
   flex-direction: column;
   gap: 1.5rem;
   align-items: center;
+  max-width: 40ch;
 }
 
 .hero-section-container img {
@@ -76,6 +77,7 @@
 
   .hero-left {
     align-items: flex-start;
+    max-width: none;
   }
 
   .hero-left p {
